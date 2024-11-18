@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客文章 - 我的博客</title>
+    <link rel="stylesheet" href="cs/styles.css">
+    <style>
+        .blog-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            margin-top: 80px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            z-index: 2;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .blog-post:last-child {
+            border-bottom: none;
+        }
+
+        .blog-post h3 {
+            color: #35424a;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: #555;
+            line-height: 1.6;
+        }
+        body{
+            background-image: url("2.jpg");
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="navbar">
+                <h1 class="fade-in"><span class="highlight">Y L V</span> </h1>
+                <nav>
+                    <ul>
+                        <li class="current fade-in"><a href="index.html">首页</a></li>
+                        <li class="fade-in"><a href="about.html">关于</a></li>
+                        <li class="fade-in"><a href="blog.html">博客文章</a></li>
+                        <li class="fade-in"><a href="contact.html">联系我</a></li>
+                        <li class="fade-in"><a href="enter.html">登录</a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                        <li class="fade-in"><a href=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="blog-container fade-in">
+            <h2 style="color: #35424a;">博客文章</h2>
+            <div class="blog-post">
+                <h3>我的第*篇博客</h3>
+                <p>暂时没有文章</p>
+            </div>
+            <div class="blog-post">
+                <h3>学习编程的心得</h3>
+                <p>....待更新....</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 图片资源来自<a href="https://zhutix.com/" style="color: rgb(255, 255, 255); text-decoration: none;"  >致美化</a>,版权归原作者所有</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(element => {
+                element.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>
